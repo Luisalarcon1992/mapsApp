@@ -1,1 +1,17 @@
-<p>zomm-range-page works!</p>
+<div id="map" #map></div>
+
+<div class="floting-range p-2">
+  <div class="floting-content">
+    <button class="btn btn-primary" (click)="zoomOut()">-</button>
+    <input type="range" name="" id="" class="form-range px-2" min="-2" max="18" [value]="currentZoom" #zoomInput
+      (input)="zoomChanged(zoomInput.value)">
+    <button class="btn btn-primary" (click)="zoomIn()">+</button>
+  </div>
+  <span class="form-label">
+    zoom: {{ currentZoom | number: '1.1-2'}}
+  </span>
+  <br>
+  <span class="form-label">
+    lat: {{ 10.123 }}
+  </span>
+</div>

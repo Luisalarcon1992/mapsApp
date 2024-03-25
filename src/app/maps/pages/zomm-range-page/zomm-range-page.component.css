@@ -1,0 +1,21 @@
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.floting-range {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  z-index: 999;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.floting-content {
+  display: flex;
+  align-items: center;
+}
